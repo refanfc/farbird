@@ -11,6 +11,7 @@
     "react-dom": "^18.x",
     "wagmi": "^1.x",
     "viem": "^1.x"
+    "@farcaster/auth": "^1.0.0",
   },
   "devDependencies": {
     "vite": "^4.x",
