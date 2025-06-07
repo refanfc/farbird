@@ -1,10 +1,6 @@
 {
-  "frame": {
-    "version": "1",
-    "name": "Farbird",
-    "iconUrl": "https://farbird-rho.vercel.app/icon.png",
-    "homeUrl": "https://farbird-rho.vercel.app/",
-    "splashImageUrl": "https://farbird-rho.vercel.app/splash.png",
-    "splashBackgroundColor": "#ffffff"
-  }
+  "name": "Farbird",
+  "description": "Farcaster Mini App example using @farcaster/auth",
+  "website": "https://farbird.rho.vercel.app",
+  "redirect": "https://farbird.rho.vercel.app"
 }
