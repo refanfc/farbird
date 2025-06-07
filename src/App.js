@@ -1,5 +1,4 @@
-
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dynamic } from "@dynamic-labs/sdk";
 
 export default function App() {
@@ -9,15 +8,13 @@ export default function App() {
   useEffect(() => {
     const d = new Dynamic();
     setDynamic(d);
-
-    d.connect()
-      .then(() => setUser(d.user))
-      .catch((e) => console.error("Login error", e));
   }, []);
 
   const handleLogin = () => {
     if (dynamic) {
-      dynamic.connect().catch(console.error);
+      dynamic.connect().then(() => {
+        setUser(dynamic.user);
+      }).catch(console.error);
     }
   };
 
@@ -26,10 +23,7 @@ export default function App() {
       {!user ? (
         <button onClick={handleLogin}>Login with Farcaster</button>
       ) : (
-        <div>
-          <p>Welcome, {user?.displayName || user?.username}</p>
-          {/* UI lainnya */}
-        </div>
+        <div>Welcome, {user.displayName || user.username}</div>
       )}
     </div>
   );
