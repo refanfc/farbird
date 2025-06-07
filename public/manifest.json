@@ -1,0 +1,8 @@
+{
+  "name": "FarBird",
+  "description": "Mini app untuk payment dengan Frames di Farcaster",
+  "icon": "https://farbird-rho.vercel.app/icon.png",
+  "url": "https://farbird-rho.vercel.app",
+  "author": "refanfc",
+  "version": "1.0"
+}
