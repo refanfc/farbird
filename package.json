@@ -1,0 +1,23 @@
+{
+  "name": "farbird",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "wagmi": "^1.x",
+    "viem": "^1.x"
+  },
+  "devDependencies": {
+    "vite": "^4.x",
+    "@vitejs/plugin-react": "^4.x",
+    "tailwindcss": "^3.x",
+    "autoprefixer": "^10.x",
+    "postcss": "^8.x",
+    "typescript": "^5.x"
+  }
+}
